@@ -55,6 +55,13 @@ int main()
     std::cout << "Enter the size of the array" << std::endl;//просим пользователя ввести размер массива
     std::cin >> size_arr;
     int arr[size_arr];
+    
+    for (i = 0; i<size_arr; i++){
+        arr[i] = rand()%size_arr+1;
+        std::cout << arr[i];
+        std::cout<< " ";
+    }
+    std::cout << std::endl;
 
     quickSort(arr, 0, size_arr - 1);
 
